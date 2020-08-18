@@ -13,13 +13,6 @@ Although we were informed to authenticate for Admins specifically, I feel it mak
 
 The Project Consists of Pages :
 
-<<<<<<< HEAD
-Slide Page (How to use the App) Login Page (Where to login as user or admin) Register Page (where to register as user) Profile Page (where to edit your profile and monitor earnings) Workers Page (Admin Page to see all user, as assign privileges to users or view SSN)
-
-Stack Used;
-
-FrontEnd : HTML5, JS, CSS, HBS BackEnd : NODEJS, EXPRESS, FIREBASE CLOUD FUNCTIONS DataBase : Firebase NOSQL Authentication : Firebase Auth Encryption : AES-256
-=======
 Slide Page (How to use the App)
 Login Page (Where to login as user or admin)
 Register Page (where to register as user)
@@ -35,4 +28,3 @@ Authentication : Firebase Auth
 Encryption : AES-256
 
 
->>>>>>> f6f0a2a0aeb4c57e194276e9998a829610ca93af
