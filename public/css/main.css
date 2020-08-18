@@ -1,0 +1,1427 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: 'Ubuntu', sans-serif;
+  background: url(../img/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.user
+{
+  display: flex;
+  flex:1;
+  flex-direction: row;
+  padding:2px;
+  border-bottom:1px solid #efefef;
+}
+
+.dp_cont
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border:2px #3498db solid;
+  text-align: center;
+  overflow: hidden;
+}
+
+.dp
+{
+  width:50px;
+  margin:0 auto;
+}
+
+.user_details
+{
+  flex:8;
+  padding: 5px;
+}
+
+.titler
+{
+  text-align: left;
+  color:#3498db;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.address
+{
+  text-align: left;
+  color:#2c3e50;
+  font-size: 11px;
+}
+
+.telephone
+{
+  text-align: left;
+  color:#3498db;
+  font-size: 12px;
+}
+
+.ssn
+{
+  color:#c0392b;
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+.action
+{
+  border-radius: 5px;
+  padding: 5px 7px 5px 7px;
+  text-align: center;
+  color:#fff;
+  font-size: 12px;
+  margin:4px;
+}
+
+.redu
+{
+  background-color: #c0392b;
+}
+
+.greenu
+{
+  background-color: #27ae60;
+}
+
+.blueu
+{
+  background-color: #0984e3;
+}
+
+.amount
+{
+  color:#2c3e50;
+}
+
+.hidden
+{
+  display: none;
+}
+
+.trans
+{
+  display: flex;
+  flex-direction: row;
+  width: 100;
+  justify-content: space-between;
+}
+
+.t_l
+{
+  flex:5;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #efefef;
+  padding: 5px;
+}
+
+.t_type
+{
+  color:#2c3e50;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.t_amount
+{
+  color:#27ae60;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.t_method
+{
+  color:#2980b9;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.t_date
+{
+   color:#2c3e50;
+   font-size: 12px;
+   font-weight: bold;
+}
+
+a
+{
+  text-decoration: none !important;
+}
+.motivation
+{
+  color:#2980b9;
+  font-size: 16px;
+}
+
+.timefound
+{
+  color:#fff;
+  font-size:15px;
+  font-weight: bolder;
+  background-color:#8e44ad;
+  border-radius: 50px;
+  padding:0px 8px 0px 8px;
+  float: right ;
+  display: inline-flex;
+  margin:5px;
+
+}
+
+.found_housemates
+{
+  color:#fff;
+  font-size:15px;
+  font-weight: bolder;
+  background-color:#27ae60;
+  border-radius: 50px;
+  padding:0px 8px 0px 8px;
+  float: right ;
+  display: inline-flex;
+  margin:5px;
+
+}
+.menu_item
+{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin:10px 15px 10px 15px;
+
+
+}
+
+.status
+{
+  width:100%;
+  height: 100px;
+  border-radius: 5px;
+  border:1px solid #efefef;
+  margin:5px;
+  padding:5px;
+
+}
+
+
+
+.st_title
+{
+  color:#2c3e50;
+  font-weight: bold;
+  font-size:13px;
+  display: block;
+}
+
+.thestat
+{
+  color:#d35400;
+  font-weight: bold;
+  font-size:17px;
+  display: block;
+}
+
+#myname
+{
+  width:100%;
+}
+
+.photoupload
+{
+  position: fixed;
+  left:-1000000px;
+  bottom:-100000px;
+}
+
+.not_good
+{
+  box-shadow: 0px 0px 7px 5px #c0392b;
+}
+
+.good
+{
+  box-shadow: 0px 0px 7px 5px #27ae60;
+}
+
+.loader
+{
+  position: fixed;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 9999;
+}
+
+.loading
+{
+  width:100px;
+  height:100px;
+}
+
+.md
+{
+  background-color: #d35400 !important;
+}
+
+.small_balance
+{
+ color:#27ae60;
+ margin:3px;
+}
+
+.icon
+{
+  width:50px;
+  height: 50px;
+  border-radius: 50px;
+  border:2px solid #d35400;
+}
+
+.menu_text
+{
+  font-size: 15px;
+  font-weight: bold;
+  color:#d35400;
+  text-align: center;
+}
+
+.found_text
+{
+   color:#2c3e50;
+   font-size: 15px;
+   font-weight: bold;
+   margin:4px;
+
+}
+
+.animate
+{
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+  position: relative;
+  padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  border-radius: 10px;
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  color: #FFF;
+  text-decoration: none;  
+}
+
+.blue
+{
+  background-color: #3498DB;
+  border-bottom: 5px solid #2980B9;
+  text-shadow: 0px -2px #2980B9;
+}
+
+.red
+{
+  background-color: #E74C3C;
+  border-bottom: 5px solid #BD3E31;
+  text-shadow: 0px -2px #BD3E31;
+}
+
+.green
+{
+  background-color: #82BF56;
+  border-bottom: 5px solid #669644;
+  text-shadow: 0px -2px #669644;
+}
+
+.yellow
+{
+  background-color: #F2CF66;
+  border-bottom: 5px solid #D1B358;
+  text-shadow: 0px -2px #D1B358;
+}
+
+.action-button:active
+{
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+  border-bottom: 1px solid;
+}
+
+.panel
+{
+  width:90%;
+  margin:0 auto;
+  min-height: 330px;
+  background-color: #fff;
+  border-radius: max(0px, min(8px, calc((100vw - 4px - 100%) * 9999))) / 8px;  
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+
+}
+
+.panel_head
+{
+  position: absolute;
+  top:0;
+  margin-top:-20px;
+  min-width: 100px;
+  background-color: #ef4136;
+  border-radius: max(0px, min(8px, calc((100vw - 4px - 100%) * 9999))) / 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  height: 35px;
+  color:#fff ;
+  text-align: center;
+  display: flex;
+  padding-top:10px;
+  padding-left:10px;
+  padding-right:10px;
+  align-self: center;
+  text-align: center;
+  z-index: 999;
+
+}
+
+.balance
+{
+  background-color: #3498db;
+  border-radius: 10px;
+  box-shadow:         1px 1px 3px 4px #ccc; 
+  font-size: 24px;
+  color:#fff;
+  font-weight: bold;
+  padding:5px;
+  margin:5px;
+}
+
+.user_details > span
+{
+  display: block;
+}
+.panel_body
+{
+  height:100%;
+  width:100%;
+  padding-bottom: 50px;
+
+
+} 
+
+.panel_footer
+{
+  height:50px;
+  border-top:0.5px solid #efefef;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #fff;
+}
+
+.btn-found
+{
+
+}
+
+.card
+{
+  width:100%;
+  height: 100%;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card_head
+{
+  text-align: center;
+  font-size: 20px;
+  color:#000;
+  font-weight: bolder;
+}
+
+.card_body
+{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.card_img
+{
+  width:200px;
+}
+
+.card_icon
+{
+  width:80px;
+}
+
+.profile_photo
+{
+  width:100px;
+  height: 100px;
+  border-radius: 100px;
+  border:5px #8e44ad solid;
+  overflow: hidden;
+  margin:0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+
+.red_text
+{
+  color:#c0392b !important;
+}
+
+.green_text
+{
+  color:#16a085 !important;
+}
+
+.add_photo
+{
+  padding:5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: #fff;
+  color:#8e44ad;
+  border-radius: 25px;
+  z-index: 99;
+  position: absolute;
+}
+
+.prof_pic
+{
+  width:100px;
+  height: 100px;
+}
+
+.input_box
+{
+  width: 100%;
+  height: 30px;
+  background-color: #F0F2F5;
+  border-radius: 5px;
+  padding:5px;
+  padding-left: 9px;
+  padding-right: 9px;
+  color:#000;
+  font-size: 18px;
+  margin:5px;
+  outline: none;
+  margin-top: 10px;
+}
+
+.card_jpg
+{
+  width:200px;
+
+}
+
+.card_body
+{
+  text-align: center;
+  font-size: 15px;
+  color:#000;
+  padding:10px;
+}
+
+.footer_btn
+{
+  text-decoration: none;  
+  flex:5;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text
+{
+  font-size: 15px;
+  color:#999;
+  text-align: center;
+  margin:0 auto;
+}
+
+.line_v
+{
+  border-right: 1px solid #efefef;
+}
+
+.title
+{
+  font-size: 17px;
+  color:#fff;
+  text-align: left;
+  margin: 0 auto;
+  font-weight: bolder;
+
+}
+
+body
+{
+  /*background-color: #f0f2f5;*/
+}
+
+.overlay
+{
+  position: absolute;
+  z-index: 9;
+  top:0;
+  bottom: 0;
+  left:0;
+  right:0;
+  background-color: rgba(0,0,0,0.6)
+}
+
+element.style {
+
+}
+
+.header
+{
+  position: fixed;
+  height:60px;
+  width:100%;
+  top:0;
+  right:0;
+  left:0;
+  background-color: #fff;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+}
+
+
+
+.smallText
+{
+  font-size:14px !important;
+}
+
+
+.close_chat > span
+{
+  margin:0 auto;
+}
+
+.send_chat > span
+{
+  margin:0 auto;
+}
+
+.mychat
+{
+  display: block;
+  color:#fff;
+  background-color: #3c3c3c;
+  padding:5px;
+  text-align: start;
+}
+
+.theirchat
+{
+  display: block;
+  color:#fff;
+  background-color: #485460;
+  padding: 5px;
+  text-align: end;
+}
+.house_pic
+{
+  width: 150px;
+}
+
+.house_title
+{
+  font-size:20px;
+  font-weight: bolder;
+  color:#2980b9;
+  margin:5px;
+  display: block;
+}
+
+.the_labels
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+  flex-direction: row;
+  width: 100%
+}
+
+.bl
+{
+  flex:5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bl_title
+{
+  font-weight: bold;
+  font-size:12px;
+  text-align: left;
+}
+
+.bl_worth
+{
+  font-weight: bolder;
+  font-size:22px;
+  text-align: left;
+}
+
+.sekem_text
+{
+  color: #2980b9 !important;
+}
+
+.practice_text
+{
+  color: #d35400 !important;
+}
+
+.sekem_border
+{
+  border-color: #2980b9 !important;
+}
+
+.practice_border
+{
+  border-color: #d35400 !important;
+}
+
+.scroll
+{
+  height: 100%;
+  overflow-y:scroll;
+  width: 90%;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  display: block !important;
+
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.found_btn
+{
+
+}
+
+.half
+{
+  flex:5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:5px;
+  flex-direction: row;
+}
+
+.img_cont
+{
+  width:50px;
+  height: 50px;
+  border-radius: 50px;
+  border:2px solid #fff;
+  overflow: hidden;
+}
+
+.img_circle
+{
+  width: 50px;  
+}
+
+.right_cont
+{
+  flex:8;
+  padding:5px;
+}
+
+.nickname
+{
+  font-size: 14px;
+  color:#3498db;
+  text-align: left;
+  margin: 0 auto;
+  font-weight: bolder;
+  display: block;
+}
+
+.worth
+{
+  font-size: 20px;
+  color:#27ae60;
+  text-align:left;
+  margin: 0 auto;
+  font-weight: bolder;
+  display: block;
+
+}
+
+.img_cont2
+{
+  width:40px;
+  height: 40px;
+  border-radius: 40px;
+  border:2px solid #fff;
+  overflow: hidden;
+}
+
+.img_circle2
+{
+  width: 40px;  
+}
+
+.right_cont2
+{
+  flex:8;
+  padding:5px;
+}
+
+.nickname2
+{
+  font-size: 14px;
+  color:#3498db;
+  text-align: left;
+  margin: 0 auto;
+  font-weight: bolder;
+  display: block;
+}
+
+.worth2
+{
+  font-size: 16px;
+  color:#27ae60;
+  text-align:left;
+  margin: 0 auto;
+  font-weight: bolder;
+  display: block;
+
+}
+
+.selected, .selected > .text
+{
+  background-color: #2980b9 !important;
+  color:#fff !important;
+  font-weight: bolder !important;
+}
+
+a:active { outline: none !important; }
+a:focus { outline: none !important; }
+
+.mb-10
+{
+  margin-bottom: 10px !important;
+}
+
+.mb-20
+{
+  margin-bottom: 20px !important;
+}
+
+.action-btn
+{
+  width:50px;
+  height: 50px;
+  border-radius: 50px;
+  border:2px solid #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:5px;
+  margin-right:5px;
+  color:#fff;
+  font-size: 20px;
+  text-decoration: none;
+  outline: none;
+  foc
+
+}
+
+.longer
+{
+  min-height: 400px !important;
+}
+.header ._-kb div {
+    font-family: inherit;
+}
+.rq0escxv {
+    box-sizing: border-box;
+}
+.rozst971 {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAOBAMAAAD3WtBsAAAAFVBMVEUAAAAAAAAAAAAAAAAAAAAAAAD29va1cB7UAAAAB3RSTlMCCwQHGBAaZf6MKAAAABpJREFUCNdjSGNIY3BhCGUQBEJjIFQCQigAACyJAjLNW4w5AAAAAElFTkSuQmCC);
+}
+.pmk7jnqg {
+    position: absolute;
+}
+.p1jhd9yy {
+    background-size: 1px 7px;
+}
+.ooasylqa {
+    height: 7px;
+}
+.n7fi1qx3 {
+    right: 0;
+}
+.j9ispegn {
+    left: 0;
+}
+.hzruof5a {
+    pointer-events: none;
+}
+.g3xnvtyb {
+    background-repeat: repeat-x;
+}
+.du4w35lb {
+    z-index: 0;
+}
+.a0vgkybk {
+    bottom: -6px;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+
+table.greenTable {
+  background-color: #EEEEEE;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  margin:10px;
+}
+table.greenTable td, table.greenTable th {
+  border: 1px solid #3498db;
+  padding: 3px 2px;
+  border-radius: 5px;
+}
+table.greenTable tbody td {
+  font-size: 13px;
+}
+table.greenTable thead {
+  background: #3498db;
+  border-bottom: 0px solid #444444;
+}
+table.greenTable thead th {
+  font-size: 14px;
+  font-weight: bold;
+  color: #F0F0F0;
+  text-align: left;
+  border-left: 2px solid #3498db;
+}
+table.greenTable thead th:first-child {
+  border-left: none;
+}
+
+table.greenTable tfoot {
+  font-size: 13px;
+  font-weight: bold;
+  color: #F0F0F0;
+  background: #3498db;
+  background: -moz-linear-gradient(top, #5baf6b 0%, #3a9e4d 66%, #3498db 100%);
+  background: -webkit-linear-gradient(top, #5baf6b 0%, #3a9e4d 66%, #3498db 100%);
+  background: linear-gradient(to bottom, #5baf6b 0%, #3a9e4d 66%, #3498db 100%);
+  border-top: 1px solid #3498db;
+}
+table.greenTable tfoot td {
+  font-size: 13px;
+}
+table.greenTable tfoot .links {
+  text-align: right;
+}
+table.greenTable tfoot .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #3498db;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+ .big_logo
+ {
+   width:100px;
+   margin:0 auto;
+
+ }
+ .logo_cont
+ {
+  text-align: center;
+ }
+
+ .visible
+ {
+  display: block;
+  height: 1px
+ }
+
+ .tac
+ {
+  text-align: center
+ }
+
+ .tal
+ {
+  text-align: left;
+ }
+
+ .nm
+ {
+  margin:0 auto;
+ }
+
+
+
+ .mt-50
+ {
+  margin-top: 50px;
+ }
+
+  .mt-60
+ {
+  margin-top: 60px;
+ }
+
+  .mt-40
+ {
+  margin-top: 40px;
+ }
+
+  .mt-30
+ {
+  margin-top: 30px;
+ }
+
+  .mt-20
+ {
+  margin-top: 20px;
+ }
+
+  .mt-10
+ {
+  margin-top: 10px;
+ }
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+
+.push_button {
+  position: relative;
+  width:80px;
+  height:40px;
+  text-align:center;
+  color:#FFF;
+  text-decoration:none;
+  line-height:43px;
+  display: inline-block;
+  margin-right: 10px;
+  float: right;
+}
+
+.badge
+{
+  padding:5px;
+  background-color: #0984e3;
+  border-radius: 4px;
+  border:0.5px #efefef solid;
+  display: inline-block;
+  color: #fff;
+}
+
+.push_button:before {
+  background:#f0f0f0;
+  background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#D0D0D0), to(#f0f0f0));
+  
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  
+  -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF; 
+  -moz-box-shadow:0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF; 
+  box-shadow:0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF;
+  
+  position: absolute;
+  content: "";
+  left: -6px; right: -6px;
+  top: -6px; bottom: -10px;
+  z-index: -1;
+}
+
+.push_button:active {
+  -webkit-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset;
+  top:5px;
+}
+.push_button:active:before{
+  top: -11px;
+  bottom: -5px;
+  content: "";
+}
+
+.redx {
+  text-shadow:-1px -1px 0 #A84155;
+  background: #D25068;
+  border:1px solid #D25068;
+  
+  background-image:-webkit-linear-gradient(top, #F66C7B, #D25068);
+  background-image:-moz-linear-gradient(top, #F66C7B, #D25068);
+  background-image:-ms-linear-gradient(top, #F66C7B, #D25068);
+  background-image:-o-linear-gradient(top, #F66C7B, #D25068);
+  background-image:linear-gradient(to bottom, #F66C7B, #D25068);
+  
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  
+  -webkit-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
+  -moz-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
+  box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
+}
+
+.redx:hover {
+  background: #F66C7B;
+  background-image:-webkit-linear-gradient(top, #D25068, #F66C7B);
+  background-image:-moz-linear-gradient(top, #D25068, #F66C7B);
+  background-image:-ms-linear-gradient(top, #D25068, #F66C7B);
+  background-image:-o-linear-gradient(top, #D25068, #F66C7B);
+  background-image:linear-gradient(top, #D25068, #F66C7B);
+}
+
+.bluex {
+  text-shadow:-1px -1px 0 #2C7982;
+  background: #3EACBA;
+  border:1px solid #379AA4;
+  background-image:-webkit-linear-gradient(top, #48C6D4, #3EACBA);
+  background-image:-moz-linear-gradient(top, #48C6D4, #3EACBA);
+  background-image:-ms-linear-gradient(top, #48C6D4, #3EACBA);
+  background-image:-o-linear-gradient(top, #48C6D4, #3EACBA);
+  background-image:linear-gradient(top, #48C6D4, #3EACBA);
+  
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  
+  -webkit-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
+  -moz-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
+  box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
+}
+
+.bluex:hover {
+  background: #48C6D4;
+  background-image:-webkit-linear-gradient(top, #3EACBA, #48C6D4);
+  background-image:-moz-linear-gradient(top, #3EACBA, #48C6D4);
+  background-image:-ms-linear-gradient(top, #3EACBA, #48C6D4);
+  background-image:-o-linear-gradient(top, #3EACBA, #48C6D4);
+  background-image:linear-gradient(top, #3EACBA, #48C6D4);
+}
+
+.w100
+{
+  width:100px !important;
+}
+
+.w150
+{
+  width:150px !important;
+}
+
+.w200
+{
+  width:200px !important;
+}
